@@ -28,7 +28,8 @@ pod 'CheckVersion_Swift'
 ///
 /// - Parameters:
 ///   - appId: app id,eg: 414478124 of the wechat
-///   - customContent: custom content,if the string is nil and the count of the string is greater than zero,use custom content；Otherwise,use the content of the request data
+///   - customContent: custom content,if the string is nil and the count of the string is greater 
+///                    than zero,use custom content；Otherwise,use the content of the request data
 
 public class func checkVersion(_ appId: String, _ customContent: String?)
 ```
