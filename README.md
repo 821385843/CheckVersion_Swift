@@ -24,6 +24,15 @@ pod 'CheckVersion_Swift'
 ## Use
 
 ```
+/// check version
+    ///
+    /// - Parameters:
+    ///   - appId: app id,eg: 414478124 of the wechat
+    ///   - customContent: custom content,if the string is nil and the count of the string is greater than zero,use custom content；Otherwise,use the content of the request data
+    public class func checkVersion(_ appId: String, _ customContent: String?)
+```
+
+```
 // 直接显示接口中的更新内容
 CheckVersion.checkVersion(kAppId, nil)
 ```
