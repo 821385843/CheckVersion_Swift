@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CheckVersion_Swift_Example' do
+  pod 'CheckVersion_Swift', :path => '../'
+
+  target 'CheckVersion_Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
