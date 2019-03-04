@@ -1,0 +1,6 @@
+framework module CheckVersion_Swift {
+  umbrella header "CheckVersion_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

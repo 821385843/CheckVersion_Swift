@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CheckVersion_Swift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CheckVersion_Swift.'
+  s.version          = '0.0.1'
+  s.summary          = 'CheckVersion_Swift is to check whether the native version is updated.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'CheckVersion_Swift is to check whether the native version is updated.Refer to demo for details.'
                        DESC
 
-  s.homepage         = 'https://github.com/821385843@qq.com/CheckVersion_Swift'
+  s.homepage         = 'https://github.com/821385843/CheckVersion_Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '821385843@qq.com' => '821385843@qq.com' }
-  s.source           = { :git => 'https://github.com/821385843@qq.com/CheckVersion_Swift.git', :tag => s.version.to_s }
+  s.author           = { 'Wade' => 'Wade' }
+  s.source           = { :git => 'https://github.com/821385843/CheckVersion_Swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.platform     = :ios, "8.0"
+  s.swift_version = '4.2'
 
-  s.source_files = 'CheckVersion_Swift/Classes/**/*'
+  s.source_files = 'CheckVersion_Swift/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'CheckVersion_Swift' => ['CheckVersion_Swift/Assets/*.png']

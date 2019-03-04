@@ -1,6 +1,6 @@
 # CheckVersion_Swift
 
-[![CI Status](https://img.shields.io/travis/821385843@qq.com/CheckVersion_Swift.svg?style=flat)](https://travis-ci.org/821385843@qq.com/CheckVersion_Swift)
+[![CI Status](https://img.shields.io/travis/Wade/CheckVersion_Swift.svg?style=flat)](https://travis-ci.org/Wade/CheckVersion_Swift)
 [![Version](https://img.shields.io/cocoapods/v/CheckVersion_Swift.svg?style=flat)](https://cocoapods.org/pods/CheckVersion_Swift)
 [![License](https://img.shields.io/cocoapods/l/CheckVersion_Swift.svg?style=flat)](https://cocoapods.org/pods/CheckVersion_Swift)
 [![Platform](https://img.shields.io/cocoapods/p/CheckVersion_Swift.svg?style=flat)](https://cocoapods.org/pods/CheckVersion_Swift)
@@ -22,7 +22,7 @@ pod 'CheckVersion_Swift'
 
 ## Author
 
-821385843@qq.com, 821385843@qq.com
+Wade, Wade
 
 ## License
 

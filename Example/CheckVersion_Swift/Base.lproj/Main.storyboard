@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,60 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEI-Ah-IUG">
+                                <rect key="frame" x="80.5" y="120" width="214" height="29"/>
+                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="显示从 Apple API 获取的更新内容">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAppleAPIContent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="agf-Dy-IA7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69r-6U-fyX">
+                                <rect key="frame" x="116" y="229" width="143" height="29"/>
+                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="显示自定义的更新内容">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCustomContent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uyS-IT-dN8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="II6-5A-6AQ">
+                                <rect key="frame" x="30" y="268" width="315" height="150"/>
+                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9Fn-0j-Onm"/>
+                                </constraints>
+                                <string key="text">- 首页：余额宝、定期、基金、黄金，品类齐全，灵活稳健；最懂你的财富头条来了，与你相关的资讯都在这里；
+- 股票：股票行情全新体验，聚焦股票自选，夜间模式更清晰；</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="II6-5A-6AQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="0Fi-Bi-7fx"/>
+                            <constraint firstItem="XEI-Ah-IUG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="GzT-5s-YDn"/>
+                            <constraint firstAttribute="trailing" secondItem="II6-5A-6AQ" secondAttribute="trailing" constant="30" id="Sc1-9F-gZZ"/>
+                            <constraint firstItem="II6-5A-6AQ" firstAttribute="top" secondItem="69r-6U-fyX" secondAttribute="bottom" constant="10" id="acw-gn-JF1"/>
+                            <constraint firstItem="69r-6U-fyX" firstAttribute="top" secondItem="XEI-Ah-IUG" secondAttribute="bottom" constant="80" id="aqd-rx-oaV"/>
+                            <constraint firstItem="69r-6U-fyX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="e5d-hl-ZmJ"/>
+                            <constraint firstItem="II6-5A-6AQ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fKE-EI-KDs"/>
+                            <constraint firstItem="XEI-Ah-IUG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="waH-xh-I1Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customContentTextView" destination="II6-5A-6AQ" id="NNC-AJ-yW1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
