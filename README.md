@@ -21,6 +21,18 @@ it, simply add the following line to your Podfile:
 pod 'CheckVersion_Swift'
 ```
 
+## Use
+
+```
+// 直接显示接口中的更新内容
+CheckVersion.checkVersion(kAppId, nil)
+```
+
+```
+// 显示自定义的更新内容
+CheckVersion.checkVersion(kAppId, "自定义的更新内容...")
+```
+
 ## License
 
 CheckVersion_Swift is available under the MIT license. See the LICENSE file for more info.
