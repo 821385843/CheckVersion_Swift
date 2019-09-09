@@ -13,6 +13,7 @@
 		5D83F5DD2325ED0B00AAAE83 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5DC2325ED0B00AAAE83 /* FirstViewController.swift */; };
 		5D83F5DF2325ED1600AAAE83 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5DE2325ED1600AAAE83 /* SecondViewController.swift */; };
 		5D83F5E12325ED2200AAAE83 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5E02325ED2200AAAE83 /* ThirdViewController.swift */; };
+		5D83F5E423262DAA00AAAE83 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D83F5E323262D9B00AAAE83 /* test.gif */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -39,6 +40,7 @@
 		5D83F5DC2325ED0B00AAAE83 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		5D83F5DE2325ED1600AAAE83 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5D83F5E02325ED2200AAAE83 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		5D83F5E323262D9B00AAAE83 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CheckVersion_Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckVersion_Swift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				5D83F5E323262D9B00AAAE83 /* test.gif */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for CheckVersion_Swift";
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D83F5E423262DAA00AAAE83 /* test.gif in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
