@@ -2,15 +2,15 @@
 //  UIAlertController+tip.swift
 //  iTunesUpdateApp
 //
-//  Created by 谢伟 on 2019/3/1.
-//  Copyright © 2019 谢伟. All rights reserved.
+//  Created by xie wei on 2019/3/1.
+//  Copyright © 2019 xie wei. All rights reserved.
 //
 
 import UIKit
 
 private var kContentLabKey = ""
 
-extension UIAlertController {
+public extension UIAlertController {
     
     var contentLab: UILabel? {
         get {

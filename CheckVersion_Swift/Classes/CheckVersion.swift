@@ -2,8 +2,8 @@
 //  XWCheckVersion.swift
 //  iTunesUpdateApp
 //
-//  Created by 谢伟 on 2019/3/1.
-//  Copyright © 2019 谢伟. All rights reserved.
+//  Created by xie wei on 2019/3/1.
+//  Copyright © 2019 xie wei. All rights reserved.
 //
 
 import UIKit
@@ -18,12 +18,26 @@ public func XWLog<T>(_ message : T, file : String = #file, lineNumber : Int = #l
 
 public class CheckVersion: NSObject {
     
-    /// check version
+    /// 检查 app 是否需要去 AppStore 做版本更新
     ///
     /// - Parameters:
-    ///   - appId: app id,eg: 414478124 of the wechat
-    ///   - customContent: custom content,if the string is nil and the count of the string is greater than zero,use custom content；Otherwise,use the content of the request data
-    public class func checkVersion(_ appId: String, _ customContent: String?) {
+    ///   - appId: appId
+    ///   - completion: completion ！= nil时，显示自定义 view；completion == nil时，直接显示弹出框（显示API 请求内容）
+    public class func checkVersion(_ appId: String, _ completion: ((_ dict: [String: Any]) -> ())?) {
+        if completion == nil {
+            requestAPI(appId) { (responseDict) in
+                let message = responseDict["releaseNotes"] as? String ?? ""
+                let alertContent = "\(message)\n\n是否前往 AppStore 更新版本？"
+                let trackViewUrlString = responseDict["trackViewUrl"] as? String
+                
+                UIAlertController.alertTip(alertContent, trackViewUrlString)
+            }
+        } else {
+            requestAPI(appId, completion: completion)
+        }
+    }
+    
+    class func requestAPI(_ appId: String, completion: ((_ dict: [String: Any]) -> ())?) {
         let kItunesURL = "http://itunes.apple.com/lookup?id=\(appId)"
         XWLog(kItunesURL)
         
@@ -55,19 +69,13 @@ public class CheckVersion: NSObject {
                     
                     /// to update
                     if currentBundleShortVersion.compare(lastVersion) == .orderedAscending {
-                        let message = ((customContent != nil && (customContent ?? "").count > 0) ? customContent : (responseDict["releaseNotes"] as? String ?? ""))
-                        let alertContent = "\(message ?? "")\n\n是否前往 AppStore 更新版本？"
-                        let trackViewUrlString = responseDict["trackViewUrl"] as? String
-                        
-                        UIAlertController.alertTip(alertContent, trackViewUrlString)
+                        completion?(responseDict)
                     }
                 }
-                
             } catch {
                 XWLog(error)
             }
         }
         dataTask.resume()
     }
-    
 }

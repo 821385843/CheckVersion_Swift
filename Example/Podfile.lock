@@ -1,5 +1,5 @@
 PODS:
-  - CheckVersion_Swift (0.1.0)
+  - CheckVersion_Swift (0.0.1)
 
 DEPENDENCIES:
   - CheckVersion_Swift (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CheckVersion_Swift: 222c12c9238ef71f23d3999b217fc475dace52f1
+  CheckVersion_Swift: e8d8a953cebb988488bb01faa9fee80184002ea5
 
 PODFILE CHECKSUM: c3a0b0038b7c36ba893a9b5a834c4b845dec7e26
 

@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3C444A248C06E6DFE0E1B2EA /* Pods_CheckVersion_Swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E9A53DCF0BBA7A6C3F957 /* Pods_CheckVersion_Swift_Example.framework */; };
+		5D83F5D92325D74000AAAE83 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5D82325D74000AAAE83 /* AppVersion.swift */; };
+		5D83F5DB2325EB3C00AAAE83 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5DA2325EB3C00AAAE83 /* MainTableViewController.swift */; };
+		5D83F5DD2325ED0B00AAAE83 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5DC2325ED0B00AAAE83 /* FirstViewController.swift */; };
+		5D83F5DF2325ED1600AAAE83 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5DE2325ED1600AAAE83 /* SecondViewController.swift */; };
+		5D83F5E12325ED2200AAAE83 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D83F5E02325ED2200AAAE83 /* ThirdViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -31,11 +34,14 @@
 		1ADED98960095F5ABD46FCCF /* Pods-CheckVersion_Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckVersion_Swift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckVersion_Swift_Example/Pods-CheckVersion_Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		283EE342D2DDC43A553B3660 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		561FDAF50709FBCCF5E215F0 /* Pods_CheckVersion_Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckVersion_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D83F5D82325D74000AAAE83 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		5D83F5DA2325EB3C00AAAE83 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		5D83F5DC2325ED0B00AAAE83 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5D83F5DE2325ED1600AAAE83 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5D83F5E02325ED2200AAAE83 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CheckVersion_Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckVersion_Swift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CheckVersion_Swift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckVersion_Swift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D83F5E22326275300AAAE83 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				5D83F5D82325D74000AAAE83 /* AppVersion.swift */,
+				5D83F5DA2325EB3C00AAAE83 /* MainTableViewController.swift */,
+				5D83F5DC2325ED0B00AAAE83 /* FirstViewController.swift */,
+				5D83F5DE2325ED1600AAAE83 /* SecondViewController.swift */,
+				5D83F5E02325ED2200AAAE83 /* ThirdViewController.swift */,
+			);
+			name = demo;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,9 +111,8 @@
 		607FACD21AFB9204008FA782 /* Example for CheckVersion_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				5D83F5E22326275300AAAE83 /* demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -227,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,7 +264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -335,7 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5D83F5DF2325ED1600AAAE83 /* SecondViewController.swift in Sources */,
+				5D83F5DD2325ED0B00AAAE83 /* FirstViewController.swift in Sources */,
+				5D83F5DB2325EB3C00AAAE83 /* MainTableViewController.swift in Sources */,
+				5D83F5E12325ED2200AAAE83 /* ThirdViewController.swift in Sources */,
+				5D83F5D92325D74000AAAE83 /* AppVersion.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
