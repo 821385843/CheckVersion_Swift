@@ -24,24 +24,24 @@ pod 'CheckVersion_Swift'
 ## Use
 
 ```
-/// check version
+/// 检查 app 是否需要去 AppStore 做版本更新
 ///
 /// - Parameters:
-///   - appId: app id,eg: 414478124 of the wechat
-///   - customContent: custom content,if the string is nil and the count of the string is greater 
-///                    than zero,use custom content；Otherwise,use the content of the request data
-
-public class func checkVersion(_ appId: String, _ customContent: String?)
+///   - appId: appId
+///   - completion: completion ！= nil时，显示自定义 view；completion == nil时，直接显示弹出框（显示API 请求内容）
+public class func checkVersion(_ appId: String, _ completion: ((_ dict: [String: Any]) -> ())?)
 ```
 
 ```
-// 直接显示接口中的更新内容
+// 直接显示 API请求的 内容
 CheckVersion.checkVersion(kAppId, nil)
 ```
 
 ```
-// 显示自定义的更新内容
-CheckVersion.checkVersion(kAppId, "自定义的更新内容...")
+// 显示自定义 view
+CheckVersion.checkVersion(kAppId, { (responseDict) in
+    // TODO - 去自定义 view，可以参考demo去实现
+})
 ```
 
 ## License
