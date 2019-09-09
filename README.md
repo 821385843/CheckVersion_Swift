@@ -9,7 +9,7 @@
 其实苹果提供了一个很友好的 `iTunes` 接口，供我们获取 `App Store` 中 `App` 当前的最新信息。
 
 ## 效果图
-[](https://github.com/821385843/CheckVersion_Swift/blob/master/Example/CheckVersion_Swift/test.gif)
+[s](https://github.com/821385843/CheckVersion_Swift/blob/master/Example/CheckVersion_Swift/test.gif)
 
 ## Example
 
